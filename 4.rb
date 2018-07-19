@@ -10,8 +10,10 @@ d = b**2 - 4 * a * c
 puts
 if d > 0
   puts "D: #{d}"
-  x1 = (-b + Math.sqrt(d)) / (2 * a)
-  x2 = (-b - Math.sqrt(d)) / (2 * a)
+
+  sq = Math.sqrt(d)
+  x1 = (-b + sq) / (2 * a)
+  x2 = (-b - sq) / (2 * a)
   puts "x1: #{x1}, x2: #{x2}"
 
 elsif d == 0
